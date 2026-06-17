@@ -1,0 +1,46 @@
+{
+    "projects": [
+        {
+            "title": "Plasma Music",
+            "image": "plasma_music.png",
+            "text": "I've always been looking for ways to combine my passion for music with my knack for programming. This is my favorite project I've done so far. Using JavaScript, HTML, and CSS, I was able to create a web based music player comparable to spotify.",
+            "link": "https://plasmastudios.dev/music",
+            "tags": ["software", "web", "js"]
+        }, 
+        {
+            "title": "Throw Bro",
+            "image": "throw-bro.jpg",
+            "text": "Throw Bro was a year long project where I relied on my background in C# to create a game from scratch. Throughout the project I got to experiance every aspect of developement. I made plans created an enjoyable player controller/user experiance. I worked on all of the base systems of the game and worked with physics. I used front-end skills to give the game a retro feel and used an old nintendo color pallet. Overall, this is one of my favorite projects I've worked on.",
+            "link": "https://store.steampowered.com/app/2994950/Throw_Bro/",
+            "tags": ["games", "c#", "art", "unity"]
+        },
+        {
+            "title": "Plasma Studios",
+            "image": "plasmastudiosdev.png",
+            "text": "When making my business idea official, I knew the first step was going to be a website to keep our customers updated. I made this website from scratch to push my web skills and learned a great deal about API's, web apps, and SEO.",
+            "link": "https://plasmastudios.dev",
+            "tags": ["website", "js", "html"]
+        },
+        {
+            "title": "TLC Home Watch",
+            "image": "tlc.png",
+            "text": "This project was made to help a local company, TLC Home Watch, to reach a larger amount of customers. The project was first drafted out in photoshop, then made in html and css. The final version hosted live was made using word press.",
+            "link": "https://www.tlchomewatchstg.com/",
+            "tags": ["website", "php", "wordpress"]
+        },
+        {
+            "title": "Little Shell's Adventure",
+            "image": "lsa.png",
+            "text": "My first major coding project. While it doensn't hold up as well as some of my recent accomplishments, this project will always hold a special place in my heart as the first time I felt like I had truly understood coding. I started the project in 2020 and worked on it for a whole year until I felt it was ready to be published to the public. I learned a lot about variables, functions, and optimization. This was my first real stab at Object Oriented programming as I created different classes and objects for players, enemies, and a shopping system.",
+            "link": "https://store.steampowered.com/app/1555420/Little_Shells_Adventure/",
+            "tags": ["games", "c#", "art", "music", "unity"]
+        },
+        {
+            "title": "FRED's Bit and Parts",
+            "image": "freds.png",
+            "text": "One of my more recent projects. The major difference between Fred's and some of the other games that I've worked on is that Fred's was planned, started, and finished all within a seven day time frame! This taught me a lot about being quick on my feet and helped me feel more confident in my skills as a programmer and developer.",
+            "link": "",
+            "tags": ["games", "3D model", "blender", "unity", "c#"]
+        }
+    ]
+}

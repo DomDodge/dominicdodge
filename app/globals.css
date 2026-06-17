@@ -1,26 +1,329 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* background-image: url("/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  background-color: white;
+  padding: 0;
+  margin:0;
+  color: white;
+  font-family: var(--font-outfit);
+}
+
+nav {
+  background-color: #4E8D9C;
+  width: 100vw;
+  height: 75px;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: fixed;
+  z-index: 999;
+}
+
+h2 {
+  padding: 0;
+  margin: 5px;
+  margin-left: 0;
+}
+h1 {
+  color: #85C79A;
+  margin: 0px;
+  padding: 0px;
+  font-size: 65px;
+  font-family: var(--font-hammersmith);
+}
+h3 {
+  margin: 0px;
+  margin-left: 4px;
+  color: #4E8D9C;
+  padding: 0px;
+  margin-left: 0;
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+h5 {
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+.openingBlock li, .openingBlock ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #85C79A;
+  color: white;
+  font-size: 18px;
+  width: 130px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  transition:0.2s;
+}
+button:hover {
+  background-color: #4E8D9C;
+  color: #281C59;
+  transition:0.2s;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--font-hammersmith);
+  color: white; 
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px; 
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #281C59;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out; 
+}
+
+a:hover {
+  color: #281C59;
+  transition: color 0.3s;
+}
+
+a:hover::after {
+  transform: scaleX(1); 
+  transform-origin: bottom left;
+}
+
+.linkContainer {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wave-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: transparent;
+  z-index: 6; /* sits above the featuredBlock background */
+  pointer-events: none;
+}
+
+.alt-wave-container {
+  width: 100%;
+  height: 100px;
+  background-color: #85C79A;
+}
+
+.controls {
+  background-color: #85C79A;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+/* Blocks */
+.featuredBlock {
+  background-image: url("/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100%;
+  height:550px;
+  padding-bottom: 100px; 
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: relative; 
+  overflow: visible;
+  z-index: 0; 
+}
+
+.heading {
+  background-image: url("/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height:500px;
+}
+
+.openingBlock {
+  background-color: #85C79A;
+  width:100%;
+  margin: 0;
+  padding: 10px 100px;
+  z-index: 12;  
+  position: relative; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* Target next/image output too to make sure the wrapper isn't escaping stacking order */
+.featuredBlock :where(.headshot),
+.featuredBlock img.headshot,
+.featuredBlock span > img.headshot {
+  position: relative !important;
+  z-index: 1 !important; /* lower than .openingBlock */
+}
+
+.offerBlock {
+  background-color: #4E8D9C;
+  width:100%;
+  margin: 0;
+  padding: 10px 100px;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projectBlock {
+  background-color: #4E8D9C;
+  width:100%;
+  margin: 0;
+  padding: 10px 100px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headshot {
+  position: relative; /* allow z-index to apply */
+  z-index: 1; /* below the wave (z-index:6) and below openingBlock (z-index:10) */
+  margin-top: 150px;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.tabbed {
+  margin-left: 20px;
+}
+
+.resume {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projectBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.project {
+  background-color: rgb(230, 224, 224);
+  box-shadow: 0 4px 12px -1px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  color: #4E8D9C;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0;
+  height: auto;
+  transition: 0.1s
+}
+.project:hover {
+  box-shadow: 0 4px 12px -1px rgba(0, 0, 0, 0.30);
+  transform: scale(1.025);
+  transition: 0.1s
+}
+
+.tagHolder {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 300px;
+  gap: 10px;
+}
+.tag {
+  background-color: #85C79A;
+  padding: 5px;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  text-align:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.tag:hover {
+  background-color: #4E8D9C;
+}
+
+.projectImage {
+  object-fit: cover; 
+  object-position: top;
+}
+
+.left {
+  display: flex;
+  flex-direction: column; 
+  width: 1000
+}
+
+.right {
+  display: flex;
+  flex-direction: column; 
+  width: 900px;
 }
