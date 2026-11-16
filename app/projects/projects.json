@@ -41,6 +41,41 @@
             "text": "One of my more recent projects. The major difference between Fred's and some of the other games that I've worked on is that Fred's was planned, started, and finished all within a seven day time frame! This taught me a lot about being quick on my feet and helped me feel more confident in my skills as a programmer and developer.",
             "link": "",
             "tags": ["games", "3D model", "blender", "unity", "c#"]
+        },
+        {
+            "title": "Plasma Boards",
+            "image": "boards.png",
+            "text": "My first full-stack React app hosted through Digital Ocean. The project is a fully developed productivity app used as an internal tool by Plasma Studios to organize projects better.",
+            "link": "https://boards.plasmastudios.dev",
+            "tags": ["React", "js", "website"]
+        },
+        {
+            "title": "Email Template Generator",
+            "image": "emails.png",
+            "text": "Developed during my internship with Utah Tech University. This app acts as a CMS for university emails. Faculty and staff can easily combine different blocks to customize the perfect email. The offical app is locked so this link instead shows a demo page.",
+            "link": "/projects/emails",
+            "tags": ["website", "php", "AngularJS", "js"]
+        },
+        {
+            "title": "Fishing Simulator",
+            "image": "fishing_new.png",
+            "text": "As a Python computer science teacher, I needed to show students how to combine logicical math with programming. I build this to teach. First I built it in Python using the Pygame framework, then I rebuilt it here in JavaScript for my students to visit",
+            "link": "https://plasmastudios.dev/#fishing",
+            "tags": ["games", "js", "python"]
+        },
+        {
+            "title": "QR Code Generator",
+            "image": "qrs.png",
+            "text": "Developed during my internship with Utah Tech University. This allows users to easily create QR codes used on campus. In addition it allows the user to track data and find out how much traction each code gets. It also allows for designing qr codes with images and custom colors.",
+            "link": "/projects/qr",
+            "tags": ["website", "php", "AngularJS", "js"]
+        },        
+        {
+            "title": "Word Game",
+            "image": "words.png",
+            "text": "As an experiment I developed this React-based word game as an answer to my constant desire to play New York Times Wordle. This game works the exact same way.",
+            "link": "https://dominicdodge.com/word",
+            "tags": ["games", "React", "js"]
         }
     ]
 }
