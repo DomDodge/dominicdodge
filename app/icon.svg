@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#281C59"/>
+  <g transform="rotate(45 32 32)">
+    <!-- flame -->
+    <path d="M26 46 Q32 60 38 46 Z" fill="#F2A65A"/>
+    <path d="M29 46 Q32 54 35 46 Z" fill="#FFE08A"/>
+    <!-- fins -->
+    <path d="M24 34 L16 46 L24 44 Z" fill="#4E8D9C"/>
+    <path d="M40 34 L48 46 L40 44 Z" fill="#4E8D9C"/>
+    <!-- body -->
+    <path d="M32 6 C42 14 42 34 40 46 L24 46 C22 34 22 14 32 6 Z" fill="#85C79A"/>
+    <!-- window -->
+    <circle cx="32" cy="24" r="5" fill="#281C59"/>
+    <circle cx="32" cy="24" r="3" fill="#4E8D9C"/>
+  </g>
+</svg>
