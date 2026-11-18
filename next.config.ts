@@ -12,6 +12,15 @@ const nextConfig: NextConfig = {
       permanent: false,
     }));
   },
+  async rewrites() {
+    // Keep the old PHP URL working; it's served by app/api/sizzle/search/route.ts
+    return [
+      {
+        source: "/sizzle/search.php",
+        destination: "/api/sizzle/search",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
