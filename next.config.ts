@@ -13,11 +13,15 @@ const nextConfig: NextConfig = {
     }));
   },
   async rewrites() {
-    // Keep the old PHP URL working; it's served by app/api/sizzle/search/route.ts
+    // Keep the old PHP URLs working; they're served by app/api/sizzle/*/route.ts
     return [
       {
         source: "/sizzle/search.php",
         destination: "/api/sizzle/search",
+      },
+      {
+        source: "/sizzle/cuisine.php",
+        destination: "/api/sizzle/cuisine",
       },
     ];
   },
