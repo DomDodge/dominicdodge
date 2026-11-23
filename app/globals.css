@@ -526,10 +526,20 @@ svg {
   background-color: #4E8D9C;
 }
 
+.contactPage {
+  /* Fill the screen so the green block always reaches the bottom */
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
 .outerContact {
   background-color: #85C79A;
   width: 100%;
-  height: 625px;
+  flex: 1 0 auto;
+  min-height: 625px;
+  padding: 50px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -891,10 +901,9 @@ input {
   .featuredBlock h3 {
     margin-bottom: 16px;
   }
-  .headshot {
-    margin-top: 10px;
-    width: 260px;
-    height: auto;
+  /* Hide the headshot on phones */
+  .headshotWrap {
+    display: none;
   }
 
   .heading {
@@ -959,7 +968,7 @@ input {
 
   /* Contact form */
   .outerContact {
-    height: auto;
+    min-height: 0;
     padding: 30px 16px;
   }
   .contactBlock {

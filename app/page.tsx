@@ -88,7 +88,7 @@ function Feature() {
         <h3>Fullstack Engineer and Website Developer</h3>
         <Link href="/contact"><button>CONTACT</button></Link>
       </div>
-      <div>
+      <div className="headshotWrap">
         <Image
           className="headshot"
           src="/headshot.png"
